@@ -5,12 +5,12 @@ import java.util.Date;
 class Tramite {
     private String nombre, descripcion;
     private Date fechaSolicitud;
-    private int numeroIdentidad;
+    private String numeroIdentidad;
 
     public Tramite() {
     }
 
-    public Tramite(String nombre, String descripcion, Date fechaSolicitud, int numeroIdentidad) {
+    public Tramite(String nombre, String descripcion, Date fechaSolicitud, String numeroIdentidad) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaSolicitud = fechaSolicitud;
@@ -41,11 +41,11 @@ class Tramite {
         this.fechaSolicitud = fechaSolicitud;
     }
 
-    public int getNumeroIdentidad() {
+    public String getNumeroIdentidad() {
         return numeroIdentidad;
     }
 
-    public void setNumeroIdentidad(int numeroIdentidad) {
+    public void setNumeroIdentidad(String numeroIdentidad) {
         this.numeroIdentidad = numeroIdentidad;
     }
 
