@@ -98,13 +98,13 @@ public class Usuario {
             temp = sr.nextInt(1,21);
         }
         
-        if (temp > 10) {
+        if (temp < 10) {
             numeroIdentidad += "0" + String.valueOf(temp) + "-";
         } else {
             numeroIdentidad += String.valueOf(temp) + "-";
         }
         
-        numeroIdentidad += String.valueOf((fechaNacimiento.getYear())+1900) + "-";
+        numeroIdentidad += String.valueOf((fechaNacimiento.getYear())) + "-";
         numeroIdentidad += String.valueOf(sr.nextInt(10000,100000));
         return numeroIdentidad;
     }
