@@ -6,7 +6,7 @@ import java.util.Date;
 public class Usuario {
     private String nombre, apellido, contrasena, sexo, departamento, numeroIdentidad;
     private Date fechaNacimiento;
-    SecureRandom sr = new SecureRandom();
+    private SecureRandom sr = new SecureRandom();
 
 
     public Usuario() {
@@ -83,7 +83,7 @@ public class Usuario {
         return "Usuario{" + "nombre=" + nombre + ", apellido=" + apellido + ", contrasena=" + contrasena + ", sexo=" + sexo + ", departamento=" + departamento + ", fechaNacimiento=" + fechaNacimiento + ", numeroIdentidad=" + numeroIdentidad + '}';
     }
 
-    private String CalcularNumeroIdentidad(String departamento, Date fechaNacimiento) {
+    public String CalcularNumeroIdentidad(String departamento, Date fechaNacimiento) {
         String numeroIdentidad = "";
         int temp;
         
